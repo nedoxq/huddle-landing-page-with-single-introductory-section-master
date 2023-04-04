@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;500;600&display=swap');
+
+/* CSS RESET */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* STYLES */
+
+body {
+    color: white;
+    background: url(images/bg-mobile.svg), hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.logo-container img {
+    width: 7.5rem;
+}
+
+.logo-container {
+    padding-inline: 2.25rem;
+    padding-top: 2rem;
+    text-align: left;
+}
+
+
+.container-img img {
+    transform: scale(0.975);
+}
+
+.container-info h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.container-info p {
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.803);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.container-info .btn {
+    padding: 0.7rem 4.5rem 0.7rem 4.5rem;
+    background-color: white;
+    border: none;
+    border-radius: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(257, 40%, 49%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    font-size: 0.75rem;
+}
+
+.container-info .btn:hover {
+    background: hsl(300, 69%, 71%);
+    color: white;
+}
+
+
+
+.btn {
+    cursor: pointer;
+}
+
+.btn-container .btn {
+    background-color: hsl(257, 40%, 49%);
+    border: 1px solid white;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.btn-container .btn:hover {
+    color: hsl(313, 70%, 66%);
+    border-color: hsl(313, 70%, 66%);
+}
+
+.btn-container {
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+    grid-auto-flow: column;
+}
+
+.mobile>button {
+    margin-inline: 0.25rem;
+}
+
+
+/* RESPONSIVE MEDIA QUERIES */
+
+@media (max-width:600px) {
+    body {
+        display: grid;
+        place-content: center;
+    }
+
+    .container-img {
+        padding-inline: 2.25rem;
+        padding-block: 3.6rem;
+    }
+
+    .container-info {
+        padding-inline: 2.25rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: initial;
+    }
+
+    .main-container {
+        margin-bottom: 4.25rem;
+    }
+}
+
+@media (min-width:600px) {
+
+    body {
+        background: url(images/bg-desktop.svg), hsl(257, 40%, 49%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .main-container {
+        margin-top: 1rem;
+        display: flex;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-container .container-img {
+        width: 750px;
+    }
+
+    .container-img img {
+        transform: scale(1);
+    }
+
+    .main-container .container-info {
+        width: 500px;
+    }
+
+    .logo-container img {
+        width: 13rem;
+    }
+
+    .logo-container {
+        padding-inline: 4rem;
+        padding-top: 3.5rem;
+    }
+
+    .container-img {
+        margin-block: 3.75rem;
+        margin-left: 4rem;
+    }
+
+    .container-img img {
+        width: fit-content;
+    }
+
+    .container-info h1 {
+        font-size: 2.6rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .container-info p {
+        font-size: 1.1rem;
+        line-height: 1.65rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+
+    .container-info .btn {
+        padding: 0.90rem 4rem 0.90rem 4rem;
+        border-radius: 2.5rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        font-size: 1.15rem;
+    }
+
+    .container-info {
+        margin-block: 6rem;
+        margin-inline: 3rem;
+    }
+
+    .btn-container .btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .btn-container {
+        margin: auto;
+        float: right;
+        padding-inline: 17.5rem;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: initial;
+    }
+
+    .desktop>button {
+        margin-inline: 0.4rem;
+    }
+}
