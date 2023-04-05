@@ -79,7 +79,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.container-info .btn {
+.container-info .btn-reg {
     padding: 0.7rem 4.5rem 0.7rem 4.5rem;
     background-color: white;
     border: none;
@@ -91,7 +91,7 @@ body {
     transition: 0.2s;
 }
 
-.container-info .btn:hover {
+.container-info .btn-reg:hover {
     background: hsl(300, 69%, 71%);
     color: white;
 }
@@ -223,11 +223,12 @@ body {
         margin-bottom: 1.5rem;
     }
 
-    .container-info .btn {
+    .container-info .btn-reg {
         padding: 0.90rem 4rem 0.90rem 4rem;
         border-radius: 2.5rem;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         font-size: 1.15rem;
+        display: block;
     }
 
     .container-info {
@@ -236,15 +237,16 @@ body {
     }
 
     .btn-container .btn {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
+        display: inline;
+        margin-top: 8rem;
     }
 
     .btn-container {
-        margin: auto;
-        float: right;
-        padding-inline: 17.5rem;
+        display: block;
+        margin-left: 15rem;
     }
 
     .mobile {
