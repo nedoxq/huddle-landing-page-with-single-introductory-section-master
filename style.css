@@ -88,6 +88,7 @@ body {
     color: hsl(257, 40%, 49%);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     font-size: 0.75rem;
+    transition: 0.2s;
 }
 
 .container-info .btn:hover {
@@ -108,7 +109,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-
+    transition: 0.2s;
 }
 
 .btn-container .btn:hover {
